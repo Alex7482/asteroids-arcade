@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroids Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>ASTEROIDS</h1>
+
+    <div class="game-info">
+      <span>Score: <span id="score">0</span></span>
+      <span>Lives: <span id="lives">3</span></span>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div class="controls">
+      <p><strong>W</strong> Move forward</p>
+      <p><strong>A / D</strong> Rotate</p>
+      <p><strong>SPACE</strong> Shoot</p>
+      <p><strong>P</strong> Pause</p>
+    </div>
+
+    <div id="overlay" class="overlay">
+      <h2 id="overlayTitle">Ready, Pilot?</h2>
+      <p id="overlayMessage">Destroy asteroids and survive!</p>
+      <button id="startButton">START GAME</button>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
